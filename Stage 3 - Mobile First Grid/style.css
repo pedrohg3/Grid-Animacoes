@@ -1,0 +1,252 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.page {
+    margin: 0 auto;
+    max-width: 42rem;
+    height: 198rem;
+    top: 0rem;
+    text-align: center;
+    background: #EFF1FF;
+}
+
+
+header, img, h1 {
+    margin-top: 2.1rem;
+}
+
+header {
+    margin-top: 0rem; 
+    height: 27.9rem;
+    
+    background: #8E9AAF;
+    
+    animation-name: topdown;
+    animation-duration: 700ms;
+}
+
+h1 {
+    font-family: 'Staatliches';
+    font-weight: 400;
+    font-size: 4.0rem;
+    line-height: 3.4rem;
+    
+    letter-spacing: 0.05em;
+    
+    color: #FFFFFF;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    
+    background: #CBC0D3;
+    padding: 0.7rem 0rem;
+}
+
+main {
+    max-width: 38rem;
+    margin: auto;
+    
+    animation-name: downtop;
+    animation-duration: 700ms;
+}
+
+p {
+    font-family: 'Palanquin';
+    width: 30rem;
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    margin-top: 2.8rem;
+    margin-bottom: 5.5rem;
+    margin: 2.8rem auto 5.5rem;
+
+    color: #23053A;
+}
+
+.p2 {
+    font-family: 'Palanquin';
+    width: 27.5rem;
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    margin: 3.2rem auto 0;
+    
+    color: #ffffff;
+    display: none;
+}
+
+.card {
+    position: relative;
+    margin: 0 auto; 
+}
+
+.card h2 {
+    position: absolute;
+    left: 22.6rem;
+    top: 3.7rem;
+    
+    font-family: 'Staatliches';
+    font-weight: 400;
+    font-size: 2.0rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.05em;
+    
+    color: #4A4E69;
+    
+    background: #FEEAFA;
+    border-radius: 20px;
+    padding: 1px 2.4rem;
+    animation: topdown 700ms 150ms backwards;
+}
+
+.allcards .card img {
+    animation: downtop 700ms;
+}
+
+
+#images5-6 {
+    display: none;
+}
+
+footer p {
+    display: none; 
+}
+
+
+@keyframes topdown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes downtop {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (min-width: 900px) {
+    .page {
+        margin: 0;
+        width: 128rem;
+        display: flex;
+        background-color: #ffffff;
+    }
+
+    header {
+        position: absolute;
+        width: 37.7rem;
+        min-height: 62rem;
+        left: 0px;
+        top: 0px;
+    }
+
+    p {
+        display: none;
+    }
+
+    .p2 {
+        display: block;
+    }
+
+    .card h2 {
+      display: none;
+    }
+
+    .allcards {
+        width: 70rem;
+        justify-content: space-around;
+        display: grid;      
+        grid-template-areas:
+            "A B C"
+            "D B F"
+            "D E F";
+    
+        padding: 0;
+        gap: 3.2rem; 
+    }
+
+    .allcards div:nth-child(1) {
+        grid-area: A;
+    }
+    
+    .allcards div:nth-child(2) {
+        grid-area: B;
+    }
+    
+    .allcards div:nth-child(3) {
+        grid-area: C;
+    }
+    
+    .allcards div:nth-child(4) {
+        grid-area: D;
+    }
+    
+    .allcards div:nth-child(5) {
+        grid-area: E;
+    }
+    
+    .allcards div:nth-child(6) {
+        grid-area: F;
+    }
+    
+    #images5-6 {
+        display: block;
+    }
+
+    .card img {
+        width: 22rem;
+        transition: transform;
+        transition-duration: 500ms;    
+    }
+
+    .card img:hover {
+        transform:scale(1.1);
+    }
+
+    footer p {
+        position: absolute;
+        display: block;
+        font-family: sans-serif;
+        font-style: bold;
+        font-size: 1.3rem;
+        margin-left: 19.6rem;
+        
+        color: #000000;
+    }
+
+    a {
+        text-decoration: none;
+        color: #5862a1;
+    }
+
+    a:hover {
+        color: #000000;
+    }
+
+    .main-footer {
+        background: #FFFFFF;
+        margin-left: 48rem;
+        width: 90.3rem;
+    }
+
+    .page {
+        height: 0;
+    }
+}
