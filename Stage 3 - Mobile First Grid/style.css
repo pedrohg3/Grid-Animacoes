@@ -146,7 +146,7 @@ footer p {
         margin: 0;
         width: 128rem;
         display: flex;
-        background-color: #ffffff;
+        background: #EFF1FF;
     }
 
     header {
