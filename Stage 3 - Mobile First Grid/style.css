@@ -11,7 +11,6 @@
 .page {
     margin: 0 auto;
     max-width: 42rem;
-    height: 198rem;
     top: 0rem;
     text-align: center;
     background: #EFF1FF;
@@ -24,7 +23,7 @@ header, img, h1 {
 
 header {
     margin-top: 0rem; 
-    height: 27.9rem;
+    height: 100vh;
     
     background: #8E9AAF;
     
@@ -109,6 +108,10 @@ p {
 
 #images5-6 {
     display: none;
+}
+
+footer {
+    margin-top: 28px;
 }
 
 footer p {
